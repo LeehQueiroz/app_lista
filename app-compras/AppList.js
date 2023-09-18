@@ -19,7 +19,7 @@ return (
           style={styles.scrollContainer}
           contentContainerStyle={styles.itemsContainer}>
           { items.map(item => {
-              return <AppItem key={item.id} id={item.id} item={item.quantidade + '  de ' + item.descricao} />
+              return <AppItem key={item.id} id={item.id} item={item.quantidade + '  de ' + item.descricao} navigation={navigation} />
           }) }
       </ScrollView>
   </View>
